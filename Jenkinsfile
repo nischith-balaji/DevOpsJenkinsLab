@@ -4,14 +4,14 @@ pipeline{
         stage('Repo init') {
             steps {
                 echo 'installing packages'
-                npm install
+                bat 'npm install'
             }
         }
 
         stage('Testing') {
             steps {
                 echo 'running tests'
-                npm run test
+                bat 'npm run test'
             }
         }
     }
