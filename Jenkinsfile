@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages {
-        stage('Repo init') {
+        stage('Installing dependencies') {
             steps {
                 echo 'installing packages'
                 bat 'npm install'
